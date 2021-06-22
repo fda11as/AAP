@@ -1,9 +1,9 @@
 ## Ansible Root Directory ##
 
-Directory Structure
+**Directory Structure**
 
-/ansible
-
-/ansible/inventory
-
-/ansible/roles
+> /ansible
+> 
+> /ansible/inventory
+>
+> /ansible/roles
