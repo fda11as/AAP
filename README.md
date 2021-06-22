@@ -3,5 +3,7 @@
 Directory Structure
 
 /ansible
+
 /ansible/inventory
+
 /ansible/roles
