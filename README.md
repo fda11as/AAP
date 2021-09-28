@@ -5,7 +5,5 @@
 > /ansible
 > 
 > /ansible/inventory
->
-> /ansible/roles
 > 
 > /ansible/vars 
