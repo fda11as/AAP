@@ -1,0 +1,16 @@
+---
+#qcow_image: /home/jcadmus/KVM-Images/rhel-server-7.8-x86_64-kvm.qcow2
+#qcow_image: /home/jcadmus/KVM-Images/rhel-server-7.7-x86_64-kvm.qcow2
+qcow_image: /home/jcadmus/KVM-Images/rhel-8.1-x86_64-kvm.qcow2
+#qcow_image: /home/jcadmus/KVM-Images/rhel-8.2-x86_64-kvm.qcow2
+#libvirt_path: /var/lib/libvirt/images
+libvirt_path: /home/jcadmus/VirtualMachines
+qemu_path: /usr/libexec/qemu-kvm
+password: passw0rd
+vm_name: vmrh8-rand02
+#vm_name: rhel7
+vm_domain: internal.demo.net
+vm_cpu: 1
+vm_ram: 1024
+vm_size: 4096G
+nameserver: "@10.10.0.1"

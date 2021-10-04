@@ -1,0 +1,8 @@
+#cloud-config
+user: jcadmus
+password: "{{ password }}"
+chpasswd: { expire: False }
+ssh_pwauth: True
+disable_root: False
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDSfpOLVXCH7n/pLgWgRCUrBOw/sFlWIe1NmAedK7cK1YdUcuX2YZA2GXZUXcotqGWwRts+svOPlS1fsA/IOGwKa6jfIKkNTQhDy1ZJIr+89Yfn9K9UGeOIe+xJYLDaYC3n/Cx2InfIfS0zacg7M6BjRHG2fz3Jk4rlCagOK//RjlqeysD1kQpyW2ZdTWVIkaBW0sQfuFp89qk3xbXF1io51YbKbrWkyLU+pWXxU8o/2pTrrhuAi3jhXeIOEreuuMlNUjSYcxWgecqYqcsEQK42Yw7v/hM+x9qy9GvtNmvPk+UpJ+Qju/cmtxUPklX80cvXhsSkVfVBtLlq3ur8e82Z jcadmus@jcadmus.iad2.csb

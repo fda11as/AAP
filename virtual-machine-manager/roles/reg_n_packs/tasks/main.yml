@@ -1,0 +1,42 @@
+---
+- name: Wait for SSH
+  wait_for_connection:
+    delay: 10
+    timeout: 60
+
+- name: Subscribe to RHN
+  redhat_subscription:
+    state: present
+    username: jcadmus@redhat.com
+    password: "{{ registration_password }}"
+    pool_ids: 8a85f99b6b498682016b521dfe463949
+
+- name: Enable Repos RHEL7
+  rhsm_repository:
+    name:
+      - rhel-7-server-optional-rpms
+      - rhel-7-server-supplementary-rpms
+    state: disabled
+  when: ansible_facts['distribution_major_version'] == "7"
+
+- name: Disable Repos RHEL7
+  rhsm_repository:
+    name:
+      - rhel-7-server-htb-rpms
+    state: disabled
+  when: ansible_facts['distribution_major_version'] == "7"
+
+- name: Enable Repos RHEL8
+  rhsm_repository:
+    name:
+      - rhel-8-for-x86_64-baseos-rpms
+    state: enabled
+  when: ansible_facts['distribution_major_version'] == "8"
+
+- name: Install Needed Packages
+  yum:
+    name:
+      - bind-utils
+      - wget
+      - vim
+    state: present
