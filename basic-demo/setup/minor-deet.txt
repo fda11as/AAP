@@ -1,0 +1,6 @@
+# Create Ansible User
+
+# Create Ansible User Keys and copy to hosts
+
+# Attach AAP2 repo
+subscription-manager repos --enable ansible-automation-platform-2.4-for-rhel-9-x86_64-rpms
