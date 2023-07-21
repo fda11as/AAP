@@ -1,0 +1,9 @@
+---
+- name: Apache server installed
+  hosts: vmrh8-web1
+  become: yes
+  tasks:
+  - name: lastest apache version installed
+    ansible.builtin.yum:
+      name: httpd
+      state: latest

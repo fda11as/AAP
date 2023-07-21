@@ -1,5 +1,0 @@
----
-admin_password: babysavannah
-pg_password: babysavannah
-rabbitmq_password: babysavannah
-tower_build_ip: "{{ hostvars['localhost']['new_vm_ipaddr'] }}"

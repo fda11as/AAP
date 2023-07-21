@@ -1,9 +1,9 @@
-## Ansible Root Directory ##
+## TAP Ansible Operations Repo ##
 
-**Directory Structure**
+** Directory Structure**
 
-> /ansible
+> /inventory
 > 
-> /ansible/inventory
-> 
-> /ansible/vars 
+> /vars
+>
+> /files
