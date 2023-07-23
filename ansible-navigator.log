@@ -174,3 +174,55 @@
 2023-07-20T23:46:16.141573+00:00 CRITICAL 'ansible_navigator.actions.run_4fe8._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'faab2dd9-6ac9-49e0-97d6-49e1c48e5fb2', 'counter': 135, 'stdout': '                        run operations as this user (default=root)', 'start_line': 134, 'end_line': 135, 'runner_ident': '16d124cf-e4db-45e7-8592-d50f750ee6b5', 'created': '2023-07-20T23:46:16.010845'}
 2023-07-20T23:46:16.141636+00:00 CRITICAL 'ansible_navigator.actions.run_4fe8._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '9b4e0211-2f73-41af-ba98-86fc93e275db', 'counter': 136, 'stdout': '  -b, --become          run operations with become (does not imply password', 'start_line': 135, 'end_line': 136, 'runner_ident': '16d124cf-e4db-45e7-8592-d50f750ee6b5', 'created': '2023-07-20T23:46:16.010908'}
 2023-07-20T23:46:16.141695+00:00 CRITICAL 'ansible_navigator.actions.run_4fe8._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '970137c8-d741-413d-83b5-5bb044bed860', 'counter': 137, 'stdout': '                        prompting)', 'start_line': 136, 'end_line': 137, 'runner_ident': '16d124cf-e4db-45e7-8592-d50f750ee6b5', 'created': '2023-07-20T23:46:16.010985'}
+2023-07-23T21:27:21.800193+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' Image inspection failed, image assumed to be corrupted or missing
+2023-07-23T21:27:21.801091+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' stdout: []
+
+2023-07-23T21:27:21.801165+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' stderr: time="2023-07-23T17:27:21-04:00" level=warning msg="The cgroupv2 manager is set to systemd but there is no systemd user session available"
+time="2023-07-23T17:27:21-04:00" level=warning msg="For using systemd, you may need to login using an user session"
+time="2023-07-23T17:27:21-04:00" level=warning msg="Alternatively, you can enable lingering with: `loginctl enable-linger 1000` (possibly as root)"
+time="2023-07-23T17:27:21-04:00" level=warning msg="Falling back to --cgroup-manager=cgroupfs"
+Error: inspecting object: registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8:latest: image not known
+time="2023-07-23T17:27:21-04:00" level=warning msg="Failed to add pause process to systemd sandbox cgroup: exec: \"dbus-launch\": executable file not found in $PATH"
+
+2023-07-23T21:27:22.267489+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-07-23T21:27:22.821643+00:00 ERROR 'ansible_navigator.actions.doc._run_runner' Error occurred while fetching doc for plugin yum: 'time="2023-07-23T17:27:22-04:00" level=warning msg="The cgroupv2 manager is set to systemd but there is no systemd user session available"
+time="2023-07-23T17:27:22-04:00" level=warning msg="For using systemd, you may need to login using an user session"
+time="2023-07-23T17:27:22-04:00" level=warning msg="Alternatively, you can enable lingering with: `loginctl enable-linger 1000` (possibly as root)"
+time="2023-07-23T17:27:22-04:00" level=warning msg="Falling back to --cgroup-manager=cgroupfs"
+time="2023-07-23T17:27:22-04:00" level=warning msg="The cgroupv2 manager is set to systemd but there is no systemd user session available"
+time="2023-07-23T17:27:22-04:00" level=warning msg="For using systemd, you may need to login using an user session"
+time="2023-07-23T17:27:22-04:00" level=warning msg="Alternatively, you can enable lingering with: `loginctl enable-linger 1000` (possibly as root)"
+time="2023-07-23T17:27:22-04:00" level=warning msg="Falling back to --cgroup-manager=cgroupfs"
+Error: initializing source docker://registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8:latest: unable to retrieve auth token: invalid username/password: unauthorized: Please login to the Red Hat Registry using your Customer Portal credentials. Further instructions can be found here: https://access.redhat.com/RegistryAuthentication
+'
+2023-07-23T21:28:13.031088+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' Image inspection failed, image assumed to be corrupted or missing
+2023-07-23T21:28:13.031510+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' stdout: []
+
+2023-07-23T21:28:13.031627+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' stderr: time="2023-07-23T17:28:12-04:00" level=warning msg="The cgroupv2 manager is set to systemd but there is no systemd user session available"
+time="2023-07-23T17:28:12-04:00" level=warning msg="For using systemd, you may need to login using an user session"
+time="2023-07-23T17:28:12-04:00" level=warning msg="Alternatively, you can enable lingering with: `loginctl enable-linger 1000` (possibly as root)"
+time="2023-07-23T17:28:12-04:00" level=warning msg="Falling back to --cgroup-manager=cgroupfs"
+time="2023-07-23T17:28:13-04:00" level=warning msg="The cgroupv2 manager is set to systemd but there is no systemd user session available"
+time="2023-07-23T17:28:13-04:00" level=warning msg="For using systemd, you may need to login using an user session"
+time="2023-07-23T17:28:13-04:00" level=warning msg="Alternatively, you can enable lingering with: `loginctl enable-linger 1000` (possibly as root)"
+time="2023-07-23T17:28:13-04:00" level=warning msg="Falling back to --cgroup-manager=cgroupfs"
+Error: inspecting object: registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8:latest: image not known
+
+2023-07-23T21:29:07.826994+00:00 ERROR 'ansible_navigator.actions.doc._run_runner' Error occurred while fetching doc for plugin yum: 'time="2023-07-23T17:29:05-04:00" level=warning msg="The cgroupv2 manager is set to systemd but there is no systemd user session available"
+time="2023-07-23T17:29:05-04:00" level=warning msg="For using systemd, you may need to login using an user session"
+time="2023-07-23T17:29:05-04:00" level=warning msg="Alternatively, you can enable lingering with: `loginctl enable-linger 1000` (possibly as root)"
+time="2023-07-23T17:29:05-04:00" level=warning msg="Falling back to --cgroup-manager=cgroupfs"
+time="2023-07-23T17:29:05-04:00" level=warning msg="The cgroupv2 manager is set to systemd but there is no systemd user session available"
+time="2023-07-23T17:29:05-04:00" level=warning msg="For using systemd, you may need to login using an user session"
+time="2023-07-23T17:29:05-04:00" level=warning msg="Alternatively, you can enable lingering with: `loginctl enable-linger 1000` (possibly as root)"
+time="2023-07-23T17:29:05-04:00" level=warning msg="Falling back to --cgroup-manager=cgroupfs"
+'
+2023-07-23T21:35:46.343424+00:00 ERROR 'ansible_navigator.actions.doc._run_runner' Error occurred while fetching doc for plugin reboot: 'time="2023-07-23T17:35:44-04:00" level=warning msg="The cgroupv2 manager is set to systemd but there is no systemd user session available"
+time="2023-07-23T17:35:44-04:00" level=warning msg="For using systemd, you may need to login using an user session"
+time="2023-07-23T17:35:44-04:00" level=warning msg="Alternatively, you can enable lingering with: `loginctl enable-linger 1000` (possibly as root)"
+time="2023-07-23T17:35:44-04:00" level=warning msg="Falling back to --cgroup-manager=cgroupfs"
+time="2023-07-23T17:35:44-04:00" level=warning msg="The cgroupv2 manager is set to systemd but there is no systemd user session available"
+time="2023-07-23T17:35:44-04:00" level=warning msg="For using systemd, you may need to login using an user session"
+time="2023-07-23T17:35:44-04:00" level=warning msg="Alternatively, you can enable lingering with: `loginctl enable-linger 1000` (possibly as root)"
+time="2023-07-23T17:35:44-04:00" level=warning msg="Falling back to --cgroup-manager=cgroupfs"
+'

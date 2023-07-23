@@ -1,0 +1,10 @@
+---
+- name: create motd
+  hosts: node3
+  tasks:
+    - name: add info to motd
+      ansible.builtin.lineinfile:
+        path: /etc/motd
+        line: 'Welcome to the ansible demo!'
+        state: present
+

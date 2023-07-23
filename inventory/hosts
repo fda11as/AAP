@@ -1,10 +1,14 @@
-vmrh8-web1
-vmrh8-web2
+vmrh9-dev-web1
+vmrh9-dev-web2
+vmrh9-prod-web1
 vmrh9-aap2c1
 
-[web]
+[dev]
 vmrh8-web1
 vmrh8-web2
+
+[prod]
+vmrh9-prod-web1
 
 [controller]
 vmrh9-aap2c1

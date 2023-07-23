@@ -1,0 +1,11 @@
+---
+- name: ping all the web servers
+  hosts: web
+  tasks:
+    - name: ping all the web nodes
+      ansible.builtin.ping:
+      register: result
+    - name: show me the pong
+      ansible.builtin.debug:
+        msg: "{{ result.ping }}"
+
