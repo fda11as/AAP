@@ -1,9 +1,1 @@
-## Ansible Root Directory ##
-
-**Directory Structure**
-
-> /ansible
-> 
-> /ansible/inventory
-> 
-> /ansible/vars 
+## Basic Ansible Demo ##

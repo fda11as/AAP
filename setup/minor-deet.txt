@@ -4,3 +4,8 @@
 
 # Attach AAP2 repo
 subscription-manager repos --enable ansible-automation-platform-2.4-for-rhel-9-x86_64-rpms
+
+# change the min mem req
+/root/ansible-automation-platform-setup-bundle-2.4-1-x86_64/collections/ansible_collections/ansible/automation_platform_installer/roles/preflight
+
+# 
