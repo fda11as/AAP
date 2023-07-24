@@ -1,4 +1,6 @@
 ---
 - name: Unconditionally reboot the machine with all defaults
   hosts: web
-  ansible.builtin.reboot:
+  tasks:
+    - name: rebooting system
+      ansible.builtin.reboot:
