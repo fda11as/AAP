@@ -1,7 +1,8 @@
 ---
-- name: Upgrade all packages
+- name: dnf update
   hosts: web
   tasks:
-  ansible.builtin.dnf:
-    name: '*'
-    state: latest 
+  - name: update all packages
+    ansible.builtin.dnf:
+      name: '*'
+      state: latest 
