@@ -1,5 +1,6 @@
 ---
 - name: Upgrade all packages
+  hosts: web
   ansible.builtin.yum:
     name: '*'
     state: latest 
